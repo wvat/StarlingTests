@@ -46,6 +46,10 @@ add_executable(bag_rec src/bag_rec.cpp)
 ament_target_dependencies(bag_rec rclcpp px4_msgs rosbag2_cpp)
 install(TARGETS bag_rec DESTINATION lib/${PROJECT_NAME})
 
+# Multi-robot takeoff test  
+add_executable(multi_takeoff src/multi_takeoff.cpp)
+ament_target_dependencies(multi_takeoff rclcpp px4_msgs)
+install(TARGETS multi_takeoff DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
