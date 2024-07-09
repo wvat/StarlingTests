@@ -1,0 +1,8 @@
+launch:
+
+- node:
+    pkg: "starling_tests"
+    exec: "takeoff"
+    name: "takeoff"
+    namespace: "drone1"
+    output: "screen"
